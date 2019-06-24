@@ -1,34 +1,36 @@
 <template>
-  <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank">
-        <span class="mr-2">Latest Release</span>
-        <v-icon>open_in_new</v-icon>
-      </v-btn>
-    </v-toolbar>
-
-    <v-content>
-      <router-view/>
-    </v-content>
-  </v-app>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <div>
+      <p>
+        If iView is successfully added to this project, you'll see an
+        <code v-text="'<Button>'"></code>
+        below
+      </p>
+      <Button type="primary">Button</Button>
+    </div>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div>
 </template>
 
 <script>
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  data () {
-    return {
-      //
-    }
+  name: 'app',
+  components: {
+    HelloWorld
   }
 }
 </script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
