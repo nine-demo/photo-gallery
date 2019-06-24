@@ -1,8 +1,8 @@
 <template>
-  <Layout>
+  <Layout :style="{ height: '100%'}">
     <PageHeader></PageHeader>
-    <Layout :style="{ marginTop: '74px'}" class="layout">
-      <i-content :style="{padding: '0 0 24px', minHeight: '280px', background: '#fff'}">
+    <Layout :style="{ marginTop: '74px', height: '100%'}" class="layout">
+      <i-content :style="{padding: '0 0 24px', height: '100%', background: '#fff'}">
         <router-view></router-view>
       </i-content>
     </Layout>
