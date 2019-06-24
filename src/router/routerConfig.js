@@ -29,7 +29,7 @@ export const page500 = {
 }
 
 export const loginRouter = {
-  path: '/',
+  path: '/login',
   name: 'login',
   meta: {
     title: '登录'
@@ -38,11 +38,23 @@ export const loginRouter = {
 }
 
 export const mainRouter = {
-  path: '/home',
-  name: 'home',
+  path: '/',
+  name: 'app',
   component: defaultLayout,
+  redirect: {
+    name: 'login'
+  },
   children: [
-    { path: 'home', title: '首页', name: 'home_index', component: () => import('../views/Home.vue') }
+    { path: 'home',
+      title: '首页',
+      name: 'home',
+      component: () => import('../views/Home.vue')
+    },
+    { path: 'album',
+      title: '相册',
+      name: 'album',
+      component: () => import('../views/album/Album.vue')
+    }
   ]
 }
 

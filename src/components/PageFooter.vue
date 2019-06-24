@@ -19,8 +19,12 @@ export default {
 
 <style lang="less" scoped>
 .footer-wrap {
-    text-align: center;
-    padding: 8px 0;
-    font-size: 12px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 10px;
 }
 </style>
