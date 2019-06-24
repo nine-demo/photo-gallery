@@ -1,4 +1,4 @@
-import '../iview-variables.less'
+import '../index.less'
 import Vue from 'vue'
 import iView from 'iview'
 
