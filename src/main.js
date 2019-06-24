@@ -1,10 +1,9 @@
 import Vue from 'vue'
+import './plugins/fontawesome'
 import App from './App.vue'
-import router from './router'
-import store from './store'
+import router from './router/router'
+import store from './store/store'
 import './registerServiceWorker'
-import 'roboto-fontface/css/roboto/roboto-fontface.css'
-import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import './plugins/iview.js'
 
 Vue.config.productionTip = false

@@ -1,3 +1,10 @@
 module.exports = {
-  runtimeCompiler: true
+  runtimeCompiler: true,
+  css: {
+    loaderOptions: {
+      less: {
+        javascriptEnabled: true
+      }
+    }
+  }
 }
